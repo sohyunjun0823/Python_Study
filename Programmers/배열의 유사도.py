@@ -1,0 +1,14 @@
+def solution(s1, s2):
+    answer = 0
+    for i in range(len(s1)):
+        for j in range(len(s2)):
+            if s1[i] == s2[j]:
+                answer = answer + 1 
+        
+    return answer
+
+
+
+# ["a", "b", "c"]      	["com", "b", "d", "p", "c"]
+#   0    1    2            0     1    2    3    4
+#             i            j
